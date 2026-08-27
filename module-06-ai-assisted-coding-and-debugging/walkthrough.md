@@ -70,7 +70,7 @@ This is your first line of defense against AI hallucination. Frontier models rou
 
 ### Leave a trail: `logging` beats `print()`
 
-The debugger is perfect when you can sit and watch code run. But an agent working through a task, or a long WRDS pull in Part 2, runs *unattended* — and scattered `print()` calls scroll past and tell you nothing afterward. Python's built-in `logging` module gives you a durable, timestamped record you can filter by severity:
+The debugger is perfect when you can sit and watch code run. But an agent working through a task, or a long data pull, runs *unattended* — and scattered `print()` calls scroll past and tell you nothing afterward. Python's built-in `logging` module gives you a durable, timestamped record you can filter by severity:
 
 ```python
 import logging
@@ -82,7 +82,7 @@ logging.error("skipped %s — parse failed", cik)
 
 Run at `DEBUG` while developing and `INFO` in production, and the noise disappears without your deleting a single line. And `breakpoint()` — one line you drop anywhere — pauses into Python's built-in `pdb` debugger right in the terminal, which is how you inspect a variable over SSH on a server with no VS Code GUI.
 
-The two tools split along a line worth internalizing now, because Module 8 puts you on the wrong side of it. `breakpoint()` needs a human at a terminal. Code submitted to a job scheduler — like the WRDS Cloud grid job in Module 8 §8b — runs unattended on a machine you aren't logged into, so a `breakpoint()` left in by accident doesn't drop you into a debugger; it hangs the job until the scheduler kills it. **For anything that runs unattended, logging is not the lesser option — it's the only one.** Which is why the log line and its level are worth getting right the first time.
+The two tools split along a line worth internalizing now. `breakpoint()` needs a human at a terminal. Code submitted to a job scheduler runs unattended on a machine you aren't logged into, so a `breakpoint()` left in by accident doesn't drop you into a debugger; it hangs the job until the scheduler kills it. **For anything that runs unattended, logging is not the lesser option — it's the only one.** Which is why the log line and its level are worth getting right the first time.
 
 *Optional further reading: [Python logging HOWTO](https://docs.python.org/3/howto/logging.html) — the standard library's own guide; the "Basic Logging Tutorial" section is all most scripts need.*
 

@@ -2,7 +2,7 @@
 
 > **Hands-on:** [walkthrough.md](walkthrough.md) — setting up your terminal, VS Code, and your first `uv`-managed Python project.
 
-> **Windows students:** the walkthrough starts by having you install **WSL** (the Windows Subsystem for Linux) and work at an Ubuntu prompt for the rest of the course. It's a one-time install that needs a reboot, so start it before you need it — and tell us early if your laptop won't allow it. The reason is Module 8: connecting a coding agent to the WRDS Cloud requires SSH connection multiplexing and `rsync`, and native Windows can do neither.
+> **Windows students:** the walkthrough starts by having you install **WSL** (the Windows Subsystem for Linux) and work at an Ubuntu prompt for the rest of the course. It's a one-time install that needs a reboot, so start it before you need it — and tell us early if your laptop won't allow it. The reason is tooling: the `git`, `uv`, `ssh`, and `rsync` workflow this course is built on grew up on Unix, and some of it (SSH connection multiplexing, `rsync`) has no native Windows equivalent.
 
 ## Motivation
 

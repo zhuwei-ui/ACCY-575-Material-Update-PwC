@@ -51,7 +51,7 @@ git config --global core.editor "code --wait"   # use VS Code
 # or: git config --global core.editor nano       # a friendlier terminal editor
 ```
 
-`nano` is worth knowing regardless of which you pick here. Any server you reach over SSH — the WRDS Cloud in Module 8, a campus HPC node, a production box at work — gives you a terminal and nothing else, and one day you will need to change one line in a config file on the other end of that connection.
+`nano` is worth knowing regardless of which you pick here. Any server you reach over SSH — a campus HPC node, a production box at work — gives you a terminal and nothing else, and one day you will need to change one line in a config file on the other end of that connection.
 
 ## 2. Initialize a repo in your course project
 
@@ -124,7 +124,7 @@ A — B — C            ← main
 
 This is why branches are cheap: they're pointers, not file copies.
 
-**Why bother**: try things without breaking working code; let multiple people work in parallel; review work as a unit (Module 3). Real example for this course: in Part 2 you'll want to try a different feature set or a different model on the WRDS dataset — branch off, experiment, then merge back if it works or throw the branch away if it doesn't.
+**Why bother**: try things without breaking working code; let multiple people work in parallel; review work as a unit (Module 3). Real example for this course: in the Part 2 case you'll want to try a different feature set or a different model on the data — branch off, experiment, then merge back if it works or throw the branch away if it doesn't.
 
 > **Word doc analogy:** the "approved version" lives in `main`. A branch is "let me try rewriting Section 3 without messing up the approved doc." If the rewrite works, merge it in. If not, delete the branch — main is untouched.
 
@@ -176,7 +176,7 @@ Follow the prompts: pick **GitHub.com** → **HTTPS** → **Login with a web bro
 
 > **Windows:** if `gh` can't open a browser from inside Ubuntu, it prints the URL instead of launching anything — copy it into your normal Windows browser and continue there. The one-time code works the same either way. And if `apt` gives you a `gh` too old to offer the browser flow at all, install GitHub's own package repository instead, following [the official Linux instructions](https://github.com/cli/cli/blob/trunk/docs/install_linux.md).
 
-> *Why not SSH?* SSH keys also work and have advanced uses (commit signing, server-to-server automation, multi-platform key reuse). But the setup is `ssh-keygen` → `ssh-add` → copy the public key → paste into GitHub, and the failure modes are intimidating. `gh auth login` is the modern equivalent. If you outgrow it later, you'll know — and you won't have to wait long: Module 8 has you generate a keypair and install it on the WRDS Cloud, because a key is the only kind of credential a coding agent can use unattended. Every step listed above shows up there, just pointed at Wharton instead of GitHub.
+> *Why not SSH?* SSH keys also work and have advanced uses (commit signing, server-to-server automation, multi-platform key reuse). But the setup is `ssh-keygen` → `ssh-add` → copy the public key → paste into GitHub, and the failure modes are intimidating. `gh auth login` is the modern equivalent. If you outgrow it later, you'll know — the day you need to connect a coding agent to a remote host unattended, a keypair is the only kind of credential that works, and every step above shows up again pointed at that host instead of GitHub.
 
 Then create a new repo on GitHub:
 
