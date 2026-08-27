@@ -1,16 +1,4 @@
-# ACCY 575: Data Analytics Applications in Accountancy
-
-**Syllabus — Fall 2026**
-
-| | |
-|---|---|
-| **Credit** | 4 hours |
-| **Term dates** | Aug 24, 2026 – Dec 9, 2026 |
-| **Section A** (CRN 74620) | TR 12:30 PM – 1:50 PM · 3001 Business Instructional Facility |
-| **Section I** (CRN 79414) | TR 11:00 AM – 12:20 PM · 3001 Business Instructional Facility |
-| **Instructor** | *TBD* |
-| **Office hours** | *TBD* |
-| **Prerequisite** | ACCY 570 |
+# ACCY 575: Data Analytics Applications in Accountancy — Materials Update
 
 ---
 
