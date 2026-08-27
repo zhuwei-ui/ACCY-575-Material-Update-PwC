@@ -247,7 +247,7 @@ You should get a hostname and three directory names back, with no password promp
 
 That distinction is the reason §4 exists in the form it does. A command that is *usually* non-interactive is not something you can hand to an agent — the one time it prompts, the agent has no phone, no way to see the prompt, and no way to answer it, so it hangs until something kills it. §4 removes the "usually."
 
-> **Why bother with the cloud at all, if we mostly work locally?** Two reasons, one of which is binding. The binding one is §8b: the raw filings are on that filesystem and nowhere else. The general one is that some queries are too big to pull — CRSP daily for 30 years is 50+ GB — and in other contexts (regulatory filings, controlled-data audits) the data is *not allowed* to leave the host environment, so compute-goes-to-the-data is the only legal workflow. Knowing the shape of it changes how you think about the Part 3 cases.
+> **Why bother with the cloud at all, if we mostly work locally?** Two reasons, one of which is binding. The binding one is §8b: the raw filings are on that filesystem and nowhere else. The general one is that some queries are too big to pull — CRSP daily for 30 years is 50+ GB — and in other contexts (regulatory filings, controlled-data audits) the data is *not allowed* to leave the host environment, so compute-goes-to-the-data is the only legal workflow.
 
 ## 4. Give your agent a connection to ride
 

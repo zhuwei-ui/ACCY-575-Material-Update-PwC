@@ -26,9 +26,9 @@ OLS earns its keep when the outcome is continuous, you care about the direction 
 
 Starting this module, every Part 2 model gets its own branch. The pattern is the team workflow you'd run on a real engagement: branch off `main`, brief the agent, let it commit to the branch, read the diff, fix what's wrong, open a PR, self-review it, merge.
 
-You're working alone, but the workflow is the point. Part 3 puts you in groups on real cases, and if "branch → PR → review → merge" is something you're learning for the first time under group pressure, the mechanics will eat the time the analysis needed. The other reason is forced review. A green-and-red diff looks different from the working tree you've been staring at for an hour; bugs that hide in the editor jump out of a diff page.
+You're working alone, but the workflow is the point. On a real team engagement you'd be running this under group pressure, and if "branch → PR → review → merge" is something you're learning for the first time then, the mechanics will eat the time the analysis needed. The other reason is forced review. A green-and-red diff looks different from the working tree you've been staring at for an hour; bugs that hide in the editor jump out of a diff page.
 
-Be a little sloppy on these per-module PRs. The point isn't perfect commit hygiene; it's that the loop is automatic by Part 3. One commit per PR is fine. A short description is fine. Skipping the PR isn't.
+Be a little sloppy on these per-module PRs. The point isn't perfect commit hygiene; it's that the loop becomes automatic. One commit per PR is fine. A short description is fine. Skipping the PR isn't.
 
 ```bash
 cd ~/Projects/accy575/ACCY575-wrds-data-analysis

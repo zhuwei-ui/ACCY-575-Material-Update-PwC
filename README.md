@@ -18,13 +18,10 @@
 
 The course teaches you how to do real data analysis on real accounting and finance data the way it's done in 2026: with modern tooling, a coding agent at your side, and your own judgment as the load-bearing skill.
 
-The semester is split into three parts:
+The semester is split into two parts:
 
 - **Part 1 (Modules 1–7) — The Modern Python Project Workflow.** You learn to set up and run a professional-grade analytical project: VS Code, `uv`, Git/GitHub, project structure, secrets handling, data validation, and AI-assisted coding. Your deliverable is a reproducible GitHub repository, not a Jupyter notebook.
 - **Part 2 (Modules 8–16) — Agent-Driven Data Analysis.** You pull a real research dataset from WRDS and analyze it with a coding agent doing the implementation. Each module covers one method or tool (OLS, gradient boosting, BERT, LLM zero-shot, retrieval-augmented generation, OCR and document parsing, full agent loop) applied to the same dataset, capped by a forward-looking module on autonomous research agents. The lecture is the **concept** — when each method applies, what it assumes, what its output means, how to evaluate it. The agent writes the code; you direct, review, and correct it.
-- **Part 3 (Modules 17–20) — Accounting Cases.** Four real engagements — internal audit, managerial accounting, financial communications, and an advisory capstone — where you apply the Parts 1–2 toolkit the way you will at work. Each module hands you a mandate and a real dataset and leaves the method to you: no walkthrough, no prescribed pipeline, no agent prompts written for you. You scope the problem, direct the agent, and deliver a professional artifact. The first three are individual; the capstone is a team engagement defended live.
-
-Modules 1–16 each introduce one method or tool; Part 3's four engagements (Modules 17–20) are extended projects rather than single-topic modules.
 
 ---
 
@@ -84,17 +81,6 @@ The Part 2 panel, built in Module 8, is a sample of S&P 500 firm-years with two 
 | 15 | Agent end-to-end pipeline | Claude Code / agent SDKs running the full loop |
 | 16 | Autonomous research agents: where the field is heading | Virtual Lab, AI Scientist, Deep Research, reflection |
 
-### Part 3 — Accounting Cases
-
-Four engagements that apply Parts 1–2 to real accounting work. Each module is a case, not a lecture: you get a mandate, a real dataset, and a deliverable, and you decide how to get there. The first three are individual; Module 20 is a team capstone defended live before an investment committee. Each module folder holds a short **engagement brief** in place of a walkthrough.
-
-| Module | Domain | The engagement | Real data | Format |
-|------|--------|----------------|-----------|--------|
-| 17 | Internal audit | Fraud-risk analytics on a year of one agency's vendor payments; a findings memo to the audit committee | State of Oklahoma vendor-payments checkbook (public) | Individual |
-| 18 | Managerial accounting | Cost behavior & margin resilience — what a revenue downturn does to operating margin; a CFO decision memo | Compustat fundamentals (the Part 2 panel) | Individual |
-| 19 | Financial communications | MD&A disclosure-quality review vs. peers and vs. the numbers; a disclosure-committee briefing | The Part 2 10-K MD&A panel + EDGAR | Individual |
-| 20 | Advisory (**capstone**) | Acquisition screening & diligence from a two-sentence mandate; an investment-committee report and deck | Part 2 Compustat panel + incremental WRDS pull + EDGAR | Team of 3–4 |
-
 ---
 
 ## 5. Assessment
@@ -113,12 +99,6 @@ Each Part 2 module produces a short write-up — what method, what question, wha
 | Code quality and reproducibility | 30% | Does the repo run on a clean environment? Is the structure clear? |
 | Presentation / communication | 20% | Is the write-up clear and appropriately concise? |
 
-### Assessment across Part 3
-
-Part 3 is assessed on **what you deliver**, not on the path you took to it. Each engagement is graded on the professional artifact it asks for and the reproducible repository behind it — whether the deliverable is correct, defensible, and genuinely useful to the reader it is written for, and whether the analysis re-runs cleanly. There is no prescribed method and no fixed set of steps to follow; the judgment you exercised shows up in the quality of the result.
-
-The four engagements carry increasing weight as the work grows more open-ended, with the Module 20 team capstone weighted most heavily; exact weights appear on the course grading page. AI use is expected throughout (see §6) — you are accountable for every number in your deliverable as if you had produced it yourself.
-
 ---
 
 ## 6. AI Use Policy
@@ -131,20 +111,7 @@ This policy is consistent with the broader university policy on generative AI in
 
 ## 7. Datasets
 
-### Part 2 — WRDS
-
 A single research dataset pulled from WRDS in Module 8 and reused across every Part 2 module. The panel is Compustat Fundamentals Annual (`comp.funda`) for S&P 500 firm-years 2010–2024, joined on `(gvkey, fyear)` to the Item 7 (MD&A) text of the matching 10-K filings from the SEC filing archive on the WRDS Cloud; Module 8 walks through building both halves.
-
-### Part 3 — Real datasets, one per engagement
-
-Every Part 3 case runs on real data, and each student works an assigned slice so no two deliverables are alike:
-
-- **Module 17** — the State of Oklahoma vendor-payments checkbook (OMES), a free public record of state disbursements; each student is assigned one agency.
-- **Module 18** — Compustat fundamentals, reusing the Part 2 WRDS panel; each student is assigned an industry and a focal firm.
-- **Module 19** — the Part 2 10-K MD&A panel (filing text joined to fundamentals), with optional live EDGAR pulls; each student is assigned a focal firm and a peer set.
-- **Module 20** — the Part 2 Compustat panel plus a small incremental WRDS pull for working-capital fields, and EDGAR-derived filing signals; each team scopes its own universe.
-
-No data subscription beyond the Module 8 WRDS access is required, and Module 17's data is fully public.
 
 ---
 
